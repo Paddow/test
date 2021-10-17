@@ -104,7 +104,7 @@ year= today.getFullYear();
 month = month+1;
 
 $("#Prev").click(function(){
-   date = date -1;
+   date = date -1; // hier draait het om, veranderen in maand om per maand te wisselen
   if(date<1){
   month = month -1;
     if(month == 0){
@@ -125,7 +125,7 @@ $("#Prev").click(function(){
 });
 
 $("#Next").click(function(){
-   date = date + 1;
+   date = date + 1; // hier draait het om, veranderen in maand om per maand te wisselen
   if(date>28 && month == 2){
     date = 1;
     month = 3;
@@ -146,7 +146,7 @@ $("#Next").click(function(){
   $("#displayDate")[0].innerHTML = date + "/" +  month + "/" + year;
 });
 
-$("#displayDate")[0].innerHTML = date + "/" +  month + "/" + year;
+$("#displayDate")[0].innerHTML = date + "/" +  month + "/" + year; //  ...innerHTML = "hello world"; print netjes "hello world, maar ...innerHTML = $maand; geeft blanco
 
 
 </script>
